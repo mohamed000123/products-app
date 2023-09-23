@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/products.css" />
+  </head>
+  <body>
+    <%- include("./partiels/nav") %>
+    <!-- search form -->
+    <form class="form" action="/products/search" method="POST">
+      <input id="search" type="search" name="query" />
+      <button>search</button>
+    </form>
+    <!-- products -->
+    <% if (products.length>0) { products.forEach((product)=>{ %>
+    <div id="product">
+      <p><%= product.name %></p>
+      <p><%= product.price %> EGP</p>
+      <p><%= product.category %></p>
+      <p><%= product.description %></p>
+      <a class="delete" data-doc="<%= product._id %>">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </a>
+      <a class="update" data-doc="<%= product._id %>">
+        <i class="fas fa-edit"></i>
+      </a>
+    </div>
+    <% }) } %>
+    <!-- update ptoduct overlay -->
+    <div id="overlay">
+      <div class="form2" method="PUT">
+        <input type="text" placeholder="product name" id="name" />
+        <input type="number" placeholder="product price" id="price" />
+        <input type="text" placeholder="product category" id="category" />
+        <textarea placeholder="product description" id="description"></textarea>
+        <button id="btn">edit</button>
+        <i class="fas fa-window-close"></i>
+      </div>
+    </div>
+    <script src="./js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <%- include("./partiels/nav") %>
+    <!-- carousel  ----------------------------->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/one.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/two.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/three.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/four.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/five.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- products ------------------------------>
+    <div class="container-fluid mt-5 products py-5">
+      <div class="row justify-content-evenly gy-4">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/one.jpg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/five.jpg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/four.jpg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/three.jpg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/two.jpg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/twelve.jpeg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/six.jpeg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/seven.png" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/eight.jpeg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/nine.jpeg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/ten.jpeg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="item">
+            <!-- card -->
+            <div class="border border-secondary bg-body rounded-3">
+              <img src="./images/eleven.jpeg" class="card-img-top" alt="..." />
+              <div>
+                <h5>Card title</h5>
+                <p>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  >buy it</a
+                >
+              </div>
+            </div>
+            <!--    -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal ------------------------>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              buy this product
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            beware you will add this product to your cart
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

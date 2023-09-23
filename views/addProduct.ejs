@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add product</title>
+<link rel="stylesheet" href="/css/addProduct.css" />
+  </head>
+  <body>
+    <form action="/products/add-product" method="POST">
+      <input type="text" placeholder="product name" name="name" required/>
+      <input type="number" placeholder="product price" name="price" required/>
+      <input type="text" placeholder="product category" name="category" required/>
+      <textarea placeholder="product description" name="description" required></textarea>
+      <button id="btn">submit</button>
+    </form>
+  </body>
+</html>
