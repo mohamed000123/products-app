@@ -2,13 +2,8 @@ import express from "express";
 import Product from "../models/product.js";
 const router = express.Router();
 router.get("/", (req, res) => {
-  // reading cookie 
-  console.log(req.cookies);
-
-  let products = [];
   Product.find().then((data) => {
-    products = data;
-    res.render("products", { products });
+    res.render("products", { products: data });
   });
 });
 // addProduct page route
