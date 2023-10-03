@@ -6,7 +6,7 @@ const authCheck = (req, res, next) => {
     jwt.verify(token, "moAminSecretKey", (err, decodedToken) => {
       if (err) {
         console.log(err.message);
-        res.redirect("/");
+        res.redirect("/login");
       } else {
         // console.log(decodedToken);
         next()

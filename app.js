@@ -11,8 +11,8 @@ app.use(express.json()); // to access request.body data
 mongoose
   .connect("mongodb://127.0.0.1:27017/egyStores")
   .then(() => {
-    app.listen(3000, () => {
-      console.log("Server is running on port 3000");
+    app.listen(8000, () => {
+      console.log("Server is running on port 8000");
     });
   })
   .catch((err) => {
@@ -23,9 +23,10 @@ mongoose
 app.set("view engine", "ejs");
 // setting static folder
 app.use(express.static("public"));
-// to access request.body data
-app.use(express.urlencoded({ extended: true }));
+// to access request.body json data
 // app.use(express.json())
+// to access form data
+app.use(express.urlencoded({ extended: true }));
 // parsing cookies 
 app.use(cookieParser());
 //home route

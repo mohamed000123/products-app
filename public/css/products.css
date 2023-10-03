@@ -26,6 +26,9 @@ input {
 }
 button {
   cursor: pointer;
+  background-color: blue;
+  color:white;
+  border-radius: 7px;
 }
 /* over lay */
 #overlay {
